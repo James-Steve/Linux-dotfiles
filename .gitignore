@@ -1,0 +1,10 @@
+#Ignore everthing
+*
+nvim/autoload/plugged/
+#Except these
+!.gitignore
+!nvim/
+!nvim/init.vim
+!nvim/lua
+!nvim/plugins
+!nvim/autoload/plug.vim
