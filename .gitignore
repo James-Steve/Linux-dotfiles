@@ -1,10 +1,12 @@
 #Ignore everthing
 *
-nvim/autoload/plugged/
+plugged/**
+plugged/**/
 #Except these
 !.gitignore
-!nvim/
+!nvim/lua/**/*
+!nvim/autoload/.vim
+!nvim/plugins/**/*
 !nvim/init.vim
-!nvim/lua
-!nvim/plugins
-!nvim/autoload/plug.vim
+
+
