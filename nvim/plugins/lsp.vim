@@ -1,7 +1,6 @@
 lua require('lspsaga')
 lua require('hamster.compe')
 lua require('hamster.lsp')
-lua require('formatter').setup(...)
 
 set completeopt=menuone,noselect
 let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']

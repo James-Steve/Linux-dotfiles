@@ -28,6 +28,10 @@ Plug 'J0rgeSerran0/vscode-csharp-snippets'
 
 "Code clean up
 Plug 'sbdchd/neoformat'
+
+"harpoon
+Plug 'ThePrimeagen/harpoon'
+
 call plug#end()
 
 
