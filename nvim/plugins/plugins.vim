@@ -11,7 +11,11 @@ Plug 'kabouzeid/nvim-lspinstall'
 
 "autocompletion engines
 Plug 'glepnir/lspsaga.nvim'
+Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/nvim-compe'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-nvim-lua'
+Plug 'ray-x/lsp_signature.nvim'
 
 "telescope requirments
 Plug 'nvim-lua/popup.nvim'
@@ -27,8 +31,8 @@ Plug 'rafamadriz/friendly-snippets'
 Plug 'J0rgeSerran0/vscode-csharp-snippets'
 
 "Code clean up
-Plug 'sbdchd/neoformat'
-
+"Plug 'Yggdroot/indentLine'
+Plug 'lukas-reineke/indent-blankline.nvim'
 "harpoon
 Plug 'ThePrimeagen/harpoon'
 
