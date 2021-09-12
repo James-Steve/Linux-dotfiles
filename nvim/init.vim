@@ -1,18 +1,25 @@
-let path = expand('%:p:h')
-":echo path
+let path = $MYVIMRC
+let dpath = path[0:len(path)-len("init.vim")-1]
+let path = dpath[0:-1]
 "sourcing plugins
-source $HOME/.config/nvim/plugins/plugins.vim
+"source $HOME/.config/nvim/plugins/plugins.vim
+execute 'source' path."plugins/plugins.vim"
 "sourcing lsp settings
-source $HOME/.config/nvim/plugins/lsp.vim
+"source $HOME/.config/nvim/plugins/lsp.vim
+execute 'source' path."plugins/lsp.vim"
 "sourcing telescope settings
-source $HOME/.config/nvim/plugins/telescope.vim
+"source $HOME/.config/nvim/plugins/telescope.vim
+execute 'source' path."plugins/telescope.vim"
 "Sourcing snippet mappings
-source $HOME/.config/nvim/plugins/vim-vsnip.vim
+"source $HOME/.config/nvim/plugins/vim-vsnip.vim
+execute 'source' path."plugins/vim-vsnip.vim"
 "Sourcing harpoon settings
-source $HOME/.config/nvim/plugins/harpoon.vim
+"source $HOME/.config/nvim/plugins/harpoon.vim
+execute 'source' path."plugins/harpoon.vim"
 "Sourcing line indent settings
 "source $HOME/.config/nvim/plugins/indent.vim
-exec 'source' path.'/plugins/indent.vim'
+execute 'source' path."plugins/indent.vim"
+
 
 let g:tex_conceal = 'dmgs'
 let g:tex_conceal = ''
