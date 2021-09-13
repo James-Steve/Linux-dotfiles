@@ -2,3 +2,14 @@
 *
 #Except these
 !.gitignore
+!nvim/lua
+!nvim/lua/**
+!nvim/plugins/
+!nvim/plugins/**
+!nvim/init.vim
+!nvim/
+
+
+!build.sh
+!README.md
+!CHANGELOG.md
