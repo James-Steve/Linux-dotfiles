@@ -2,9 +2,3 @@
 *
 #Except these
 !.gitignore
-!nvim/init.vim
-!nvim/autoload/plug.vim
-!nvim/lua/hamster/
-!nvim/lua/hamster/**
-!nvim/plugins
-!nvim/plugins/**/*
