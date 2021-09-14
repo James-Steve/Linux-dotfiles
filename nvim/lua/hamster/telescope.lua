@@ -15,7 +15,19 @@ require("telescope").setup({
                 ["<C-q>"] = actions.send_to_qflist,
             },
         },
+
+    vimgrep_arguments = {
+      'rg',
+      '--color=never',
+      '--no-heading',
+      '--with-filename',
+      '--line-number',
+      '--column',
+      '--smart-case',
+      '-u' -- thats the new thing
+    },   
     },
+    file_ignore_patterns = {},
     extensions = {
         fzy_native = {
             override_generic_sorter = false,

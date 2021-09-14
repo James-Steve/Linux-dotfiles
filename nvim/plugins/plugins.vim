@@ -30,11 +30,19 @@ Plug 'hrsh7th/vim-vsnip-integ'
 Plug 'rafamadriz/friendly-snippets'
 Plug 'J0rgeSerran0/vscode-csharp-snippets'
 
-"Code clean up
-"Plug 'Yggdroot/indentLine'
+"line indentation marker
 Plug 'lukas-reineke/indent-blankline.nvim'
+
 "harpoon
 Plug 'ThePrimeagen/harpoon'
 
+"vim debugger
+Plug 'puremourning/vimspector'
+
+"status line (the bottom line thing)
+Plug 'hoob3rt/lualine.nvim'
+" If you want to have icons in your statusline choose one of these
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 

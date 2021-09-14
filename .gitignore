@@ -7,7 +7,8 @@
 !nvim/plugins/
 !nvim/plugins/**
 !nvim/init.vim
-!nvim/
+!nvim/*.*
+!nvim/autoload/plug.vim
 
 
 !build.sh

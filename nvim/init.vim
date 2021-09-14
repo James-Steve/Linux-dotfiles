@@ -19,6 +19,10 @@ execute 'source' path."plugins/harpoon.vim"
 "Sourcing line indent settings
 "source $HOME/.config/nvim/plugins/indent.vim
 execute 'source' path."plugins/indent.vim"
+"sourcing vimspector"
+execute 'source' path."plugins/vimspector.vim"
+"sourcing status line"
+execute 'source' path."plugins/statusline.vim"
 
 
 let g:tex_conceal = 'dmgs'
