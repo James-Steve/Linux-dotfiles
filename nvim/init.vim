@@ -37,6 +37,8 @@ set hidden
 set noerrorbells
 set nu
 set nowrap
+"setting folds based on indentation (tabs)
+set foldmethod=indent
 "set signcolumn=yes
 set isfname+=@-@
 " Give more space for displaying messages.
@@ -60,6 +62,8 @@ vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 "Pastes from the yank register"
 :nnoremap P "0p
+"paste insert mode
+:inoremap <C-q> <Esc>"0pa
 "Re-formatting line indents"
 :map <F7> gg=G
 "Making Y behave like C,D,S,etc (yanks from the cursor positon to the end of
