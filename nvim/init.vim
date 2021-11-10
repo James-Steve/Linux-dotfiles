@@ -38,7 +38,7 @@ set noerrorbells
 set nu
 set nowrap
 "setting folds based on indentation (tabs)
-set foldmethod=indent
+"set foldmethod=indent
 "set signcolumn=yes
 set isfname+=@-@
 " Give more space for displaying messages.
