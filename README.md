@@ -9,3 +9,7 @@ once you clone the reposity use Stow to create symbolic links (shortcuts) at you
 
 then start up Neovim and tpye ':PlugInstall'
 and Boom you are done!
+
+
+**File Structure**
+Within the 
