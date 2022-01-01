@@ -82,7 +82,6 @@ vnoremap K :m '<-2<CR>gv=gv
 :nnoremap n nzzzv
 :nnoremap N Nzzzv
 
-
 "undo Break points
 inoremap , ,<c-g>u
 inoremap . .<c-g>u
