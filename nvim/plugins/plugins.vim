@@ -22,6 +22,8 @@ Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
+ "telescope modules
+Plug 'nvim-telescope/telescope-file-browser.nvim'
 
 "Snippet manager
 Plug 'hrsh7th/vim-vsnip'
