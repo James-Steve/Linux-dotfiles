@@ -7,7 +7,8 @@ Plug 'windwp/nvim-autopairs'
 
 "LSP
 Plug 'neovim/nvim-lspconfig'
-Plug 'kabouzeid/nvim-lspinstall'
+"Plug 'kabouzeid/nvim-lspinstall' this was archived
+Plug 'williamboman/nvim-lsp-installer'
 
 "autocompletion engines
 Plug 'glepnir/lspsaga.nvim'
