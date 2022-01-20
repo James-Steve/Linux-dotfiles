@@ -6,6 +6,7 @@ local conf = require("telescope.config").values
 local actions = require("telescope.actions")
 require("telescope").setup({
     defaults = {
+        
         file_sorter = require("telescope.sorters").get_fzy_sorter,
         prompt_prefix = " >",
         color_devicons = true,
@@ -31,8 +32,8 @@ require("telescope").setup({
       '--smart-case',
       '-u' -- thats the new thing
     },   
+    file_ignore_patterns = {"autoload"}
     },
-    file_ignore_patterns = {},
     extensions = {
         fzy_native = {
             override_generic_sorter = false,
