@@ -1,3 +1,8 @@
+local pickers = require("telescope.pickers")
+local finders = require("telescope.finders")
+local previewers = require("telescope.previewers")
+local action_state = require("telescope.actions.state")
+local conf = require("telescope.config").values
 local actions = require("telescope.actions")
 require("telescope").setup({
     defaults = {
@@ -41,7 +46,7 @@ require("telescope").load_extension("fzy_native")
 
 local M = {}
 M.search_dotfiles = function()
-    require("telescope").load_extension.find_files({
+    require("telescope.builtin").find_files({
         prompt_title = "< VimRC >",
         cwd = "~/.config/nvim", 
         hidden = true,
