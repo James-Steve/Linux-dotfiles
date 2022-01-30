@@ -11,12 +11,17 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/nvim-lsp-installer'
 
 "autocompletion engines
-Plug 'glepnir/lspsaga.nvim'
-Plug 'hrsh7th/nvim-cmp'
-Plug 'hrsh7th/nvim-compe'
-Plug 'hrsh7th/cmp-buffer'
-Plug 'hrsh7th/cmp-nvim-lua'
+"Plug 'glepnir/lspsaga.nvim'
 Plug 'ray-x/lsp_signature.nvim'
+"autocompletion engines cmp
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-vsnip'
+Plug 'hrsh7th/cmp-nvim-lua'
+
 
 "telescope requirments
 Plug 'nvim-lua/popup.nvim'
@@ -40,7 +45,7 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'ThePrimeagen/harpoon'
 
 "vim debugger
-Plug 'puremourning/vimspector'
+"Plug 'puremourning/vimspector'
 
 "status line (the bottom line thing)
 Plug 'hoob3rt/lualine.nvim'

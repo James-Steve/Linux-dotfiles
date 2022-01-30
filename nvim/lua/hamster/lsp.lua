@@ -1,4 +1,5 @@
 require('lspconfig')
+require('hamster.cmp')
 --[[
 require'lspconfig'.tsserver.setup{ on_attach=on_attach }
 
@@ -19,7 +20,7 @@ for _, server in pairs(servers) do
 end
 --]]
 
-
+local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 
 local lsp_installer = require("nvim-lsp-installer")
 
@@ -27,7 +28,8 @@ local lsp_installer = require("nvim-lsp-installer")
 -- Alternatively, you may also register handlers on specific server instances instead (see example below).
 lsp_installer.on_server_ready(function(server)
     local opts = {
-        on_attach = on_attach
+        on_attach = on_attach,
+        capabilities = capabilities
     }
 
     -- (optional) Customize the options passed to the server

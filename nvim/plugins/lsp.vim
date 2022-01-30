@@ -1,5 +1,5 @@
-lua require('lspsaga')
-lua require('hamster.compe')
+"lua require('lspsaga')
+lua require('hamster.cmp')
 lua require('hamster.lsp')
 set completeopt=menuone,noselect
 let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
@@ -20,7 +20,8 @@ nnoremap <C-p> :lua vim.lsp.diagnostic.goto_next()<CR>
 nnoremap <C-n> :lua vim.lsp.diagnostic.goto_prev()<CR>
 nnoremap <leader>vll :call LspLocationList()<CR>
 "Char 46 is '.' "
-nnoremap <Char-46> <cmd> lua require('lspsaga.codeaction').code_action()<CR>
+"nnoremap <Char-46> <cmd> lua require('lspsaga.codeaction').code_action()<CR>
+nnoremap <Char-46> :lua vim.lsp.buf.code_action()<CR>
 
 
 nnoremap <silent> <C-f> <cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<CR>
@@ -29,3 +30,4 @@ nnoremap <silent> <C-b> <cmd>lua require('lspsaga.action').smart_scroll_with_sag
 
 
 nmap <silent> <buffer> <C-\> <Plug>(omnisharp_signature_help)
+
