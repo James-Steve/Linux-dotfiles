@@ -1,0 +1,10 @@
+autoload
+autoload/**
+~/.config/nvim/autoload
+~/.config/nvim/autoload/
+~/.config/nvim/autoload/*
+
+./autoload
+./autoload/
+./autoload/*
+

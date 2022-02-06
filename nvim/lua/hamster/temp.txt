@@ -1,0 +1,12 @@
+
+local servers = require("nvim-lsp-installer.servers")
+local names = servers.get_installed_server_names()
+for i = 1, #names do
+    require'lspconfig'[names[i]].setup
+    {
+        on_attach=on_attach,
+    }
+end
+
+
+
