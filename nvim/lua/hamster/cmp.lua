@@ -10,11 +10,9 @@ cmp.setup({
         end,
     },
     mapping = {
-        ['<C-b>'] = cmp.mapping(cmp.mapping.scroll_docs(-4), { 'i', 'c' }),
-        ['<C-f>'] = cmp.mapping(cmp.mapping.scroll_docs(4), { 'i', 'c' }),
-        ['<c-u>'] = cmp.mapping(cmp.mapping.select_next_item()),
-        ['<c-i>'] = cmp.mapping(cmp.mapping.select_prev_item()),
-        ["<C-y>"] = cmp.mapping(
+        ['<c-b>'] = cmp.mapping(cmp.mapping.scroll_docs(-4), { 'i', 'c' }),
+        ['<c-f>'] = cmp.mapping(cmp.mapping.scroll_docs(4), { 'i', 'c' }),
+        ["<c-y>"] = cmp.mapping(
             cmp.mapping.confirm {
              behavior = cmp.ConfirmBehavior.Insert,
              select = true,
