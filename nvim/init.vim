@@ -1,4 +1,5 @@
 let path = $MYVIMRC
+echo $MYVIMRC
 let dpath = path[0:len(path)-len("init.vim")-1]
 let path = dpath[0:-1]
 "sourcing plugins

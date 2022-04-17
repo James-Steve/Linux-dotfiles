@@ -22,6 +22,12 @@ require("telescope").setup({
             },
         },
 
+    pickers = {
+        find_files = {
+            find_command = {"-L"}
+        }
+    },
+
     vimgrep_arguments = {
       'rg',
       '--color=never',
@@ -41,7 +47,7 @@ require("telescope").setup({
         },
     },
 })
-require("telescope").load_extension "file_browser"
+require("telescope").load_extension("file_browser")
 
 require("telescope").load_extension("fzy_native")
 

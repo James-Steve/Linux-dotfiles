@@ -12,7 +12,9 @@ cmp.setup({
     mapping = {
         ['<C-b>'] = cmp.mapping(cmp.mapping.scroll_docs(-4), { 'i', 'c' }),
         ['<C-f>'] = cmp.mapping(cmp.mapping.scroll_docs(4), { 'i', 'c' }),
-        ["<c-y>"] = cmp.mapping(
+        ['<c-u>'] = cmp.mapping(cmp.mapping.select_next_item()),
+        ['<c-i>'] = cmp.mapping(cmp.mapping.select_prev_item()),
+        ["<C-y>"] = cmp.mapping(
             cmp.mapping.confirm {
              behavior = cmp.ConfirmBehavior.Insert,
              select = true,
@@ -24,10 +26,10 @@ cmp.setup({
             i = cmp.mapping.abort(),
             c = cmp.mapping.close(),
         }),
-        ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+        --['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
     },
     sources = cmp.config.sources({
-        { name = 'cmdline'},
+        { name = 'cmdline', keyword_length = 5},
         { name = 'nvim_lua'},
         { name = 'nvim_lsp' },
         { name = 'vsnip' }, -- For vsnip users.
@@ -52,7 +54,7 @@ cmp.setup.cmdline(':', {
     sources = cmp.config.sources({
         { name = 'path' }
     }, {
-        { name = 'cmdline' }
+        { name = 'cmdline', keyword_length = 5}
     })
 })
 

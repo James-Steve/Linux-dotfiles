@@ -2,11 +2,24 @@
 apt-get update -y
 apt-get upgrade -y
 #apt packages
-apt-get install git python3 python3-pip stow npm ripgrep unzip tar gzip wget php composer ruby-full -y
+apt-get install git python3 python3-pip stow npm ripgrep unzip tar gzip wget php composer ruby-full neovim -y
 #dotnet
 wget https://packages.microsoft.com/config/ubuntu/21.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 rm packages-microsoft-prod.deb
+
+sudo apt-get update; \
+  sudo apt-get install -y apt-transport-https && \
+  sudo apt-get update && \
+  sudo apt-get install -y dotnet-sdk-6.0
+
+sudo apt-get update; \
+  sudo apt-get install -y apt-transport-https && \
+  sudo apt-get update && \
+  sudo apt-get install -y aspnetcore-runtime-6.0
+
+sudo apt-get install -y dotnet-runtime-6.0
+
 #nvm (node version manager)
 curl -sL https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh -o install_nvm.sh
 bash install_nvm.sh
@@ -18,3 +31,13 @@ nvm install --lts
 
 #java
 sudo apt install default-jre -y
+
+
+#homebrew
+mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
+eval "$(homebrew/bin/brew shellenv)"
+brew update --force --quiet
+chmod -R go-w "$(brew --prefix)/share/zsh"
+
+#neovim
+brew install neovim
