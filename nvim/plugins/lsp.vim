@@ -23,15 +23,6 @@ nnoremap <leader>vll :call LspLocationList()<CR>
 "nnoremap <Char-46> <cmd> lua require('lspsaga.codeaction').code_action()<CR>
 nnoremap <Char-46> :lua vim.lsp.buf.code_action()<CR>
 
-
-<<<<<<< HEAD
-=======
-"nnoremap <silent> <C-f> <cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<CR>
-"-- scroll up hover doc
-"nnoremap <silent> <C-b> <cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1)<CR>
-
-
->>>>>>> fceb6cde9ddba259795ea14755d7b2098ff07896
 "nmap <silent> <buffer> <C-\> <Plug>(omnisharp_signature_help)
 
 
