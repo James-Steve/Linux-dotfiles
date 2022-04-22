@@ -10,6 +10,8 @@ cmp.setup({
         end,
     },
     mapping = {
+        ['<c-n>'] = cmp.mapping.select_next_item(), --scrolls down the intelisense options
+        ['<c-p>'] = cmp.mapping.select_prev_item(), --scrolls up the intelisense options
         ['<c-b>'] = cmp.mapping(cmp.mapping.scroll_docs(-4), { 'i', 'c' }),
         ['<c-f>'] = cmp.mapping(cmp.mapping.scroll_docs(4), { 'i', 'c' }),
         ["<c-y>"] = cmp.mapping(
